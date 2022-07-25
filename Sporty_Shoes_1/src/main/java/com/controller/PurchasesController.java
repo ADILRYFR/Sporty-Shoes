@@ -44,26 +44,11 @@ public class PurchasesController {
 		
 		String Date = req.getParameter("Date").toString();
 		String category = req.getParameter("category").toString();
-		String value="idk";
-		String dupD = Date;
 		
-		if(dupD==value) {
-			System.out.println("It might not be trash");
-		}
-		
-		if(category=="idk") {
-			System.out.println("Your code might not be trash");
-		}
 		
 		System.out.println("the value of Date is: "+Date);
 		System.out.println("The value of category is: '"+category+"'");
-		if(category!="idk") {
-			System.out.println("Your code is trash");
-		}
 		
-		if("idk"=="idk") {
-			System.out.println("I'm trash");
-		}
 		
 		
 			List<Purchase> list = ps.getPurchaseReportByCategoryAndDate(category, Date);
